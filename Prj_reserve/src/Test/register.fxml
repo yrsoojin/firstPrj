@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="385.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.RegisterController">
+   <children>
+      <TextField fx:id="idField" layoutX="153.0" layoutY="40.0" prefHeight="23.0" prefWidth="200.0" />
+      <Label layoutX="61.0" layoutY="80.0" text="비밀번호">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwField" layoutX="153.0" layoutY="80.0" prefHeight="23.0" prefWidth="200.0" />
+      <ComboBox fx:id="comboSex" layoutX="153.0" layoutY="240.0" prefHeight="23.0" prefWidth="141.0" promptText="선택">
+      	<items>
+      		<!--
+   			  FXCollections가 속한 패키지는 javafx.collections이다. 추가적으로 import해주자. 
+   			  콤보박스에 리스트 내용은 SceneBuilder에서 추가해 주는 기능이 따로 없으므로 FXML에서 
+   			  직접 작성토록 한다.
+    		-->
+      		<FXCollections fx:factory="observableArrayList">
+      			<String fx:value="남" />
+      			<String fx:value="여" />
+      		</FXCollections>
+      	</items>      
+      </ComboBox>
+      <Separator layoutX="21.0" layoutY="312.0" prefHeight="4.0" prefWidth="464.0" />
+      <Button layoutX="215.0" layoutY="336.0" onAction="#handleBtnRegAction" prefHeight="23.0" prefWidth="89.0" text="아이디 생성" />
+      <Button layoutX="401.0" layoutY="336.0" onAction="#handleBtnClear" prefHeight="23.0" prefWidth="60.0" text="초기화" />
+      <Button layoutX="383.0" layoutY="40.0" onAction="#idVerify" prefHeight="23.0" prefWidth="95.0" text="중복확인" />
+      <TextField fx:id="emailField" layoutX="153.0" layoutY="200.0" prefHeight="23.0" prefWidth="200.0" />
+      <Label layoutX="69.0" layoutY="201.0" text="이메일">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="40.0" text="아이디">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="242.0" text="성별">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="162.0" text="이름">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="153.0" layoutY="160.0" prefHeight="23.0" prefWidth="200.0" />
+      <PasswordField fx:id="pwField1" layoutX="153.0" layoutY="120.0" prefHeight="23.0" prefWidth="200.0" />
+      <Label layoutX="44.0" layoutY="122.0" text="비밀번호 확인">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="383.0" layoutY="120.0" onAction="#pwVerify" prefHeight="23.0" prefWidth="95.0" text="비밀번호 확인" />
+   </children>
+</AnchorPane>

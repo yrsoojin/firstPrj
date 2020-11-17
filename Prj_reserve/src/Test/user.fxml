@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.UserController">
+   <children>
+      <Button layoutX="122.0" layoutY="120.0" mnemonicParsing="false" onAction="#reserveTable" prefHeight="43.0" prefWidth="96.0" text="테이블 예약" />
+      <Button layoutX="122.0" layoutY="270.0" mnemonicParsing="false" onAction="#userUpdate" prefHeight="43.0" prefWidth="96.0" text="회원 정보 관리" />
+      <Button layoutX="122.0" layoutY="195.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="96.0" text="예약 조회" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="306.0" prefWidth="276.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.AdminController">
+   <children>
+      <VBox alignment="CENTER" layoutX="15.0" layoutY="27.0" prefHeight="256.0" prefWidth="247.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="96.0" text="테이블 관리" />
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="260.0" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#setMenu" prefHeight="43.0" prefWidth="70.0" text="메뉴 추가" />
+                  <Button mnemonicParsing="false" onAction="#updateMenu" prefHeight="43.0" prefWidth="70.0" text="메뉴 수정" />
+                  <Button mnemonicParsing="false" onAction="#deleteMenu" prefHeight="43.0" prefWidth="70.0" text="메뉴 삭제" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="96.0" text="전체 예약 내역" />
+            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="96.0" text="회원 정보 관리" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

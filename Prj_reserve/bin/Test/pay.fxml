@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="180.0" prefWidth="330.0" style="-fx-border-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="106.0" layoutY="72.0" text="결제하시겠습니까?" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="56.0" layoutY="119.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="예" />
+      <Button layoutX="174.0" layoutY="119.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="아니오" />
+   </children>
+</AnchorPane>

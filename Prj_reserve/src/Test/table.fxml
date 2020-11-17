@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="420.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.TableController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73dd73" height="85.0" layoutX="14.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73dd73" height="85.0" layoutX="143.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73dd73" height="85.0" layoutX="268.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73dd73" height="85.0" layoutX="385.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73dd73" height="85.0" layoutX="14.0" layoutY="151.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73dd73" height="85.0" layoutX="14.0" layoutY="271.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73dd73" height="85.0" layoutX="290.0" layoutY="284.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+      <Button fx:id="btn1" layoutX="14.0" layoutY="271.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="1" />
+      <Button fx:id="btn2" layoutX="14.0" layoutY="151.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="2" />
+      <Button fx:id="btn3" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="3" />
+      <Button fx:id="btn4" layoutX="143.0" layoutY="29.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="4" />
+      <Button fx:id="btn5" layoutX="268.0" layoutY="29.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="5" />
+      <Button fx:id="btn6" layoutX="385.0" layoutY="29.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: transparent;" text="6" />
+      <Button fx:id="btn7" layoutX="290.0" layoutY="284.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="7" />
+   </children>
+</AnchorPane>

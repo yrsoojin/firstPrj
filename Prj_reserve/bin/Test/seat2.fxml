@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox minHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Test.Seat1Controller">
+	<children>
+		<ImageView fitHeight="322.0" fitWidth="457.0">
+			<image>
+				<Image url="@images/seat2.jpg" />
+			</image>
+		
+		</ImageView>
+      <Label alignment="CENTER" prefHeight="103.0" prefWidth="297.0" text="oo카페 2번 테이블 좌석입니다. 예약하시겠습니까?" />
+		
+		<HBox alignment="CENTER" spacing="10.0">
+			<children>
+				<Button fx:id="btnReserve" prefHeight="40.0" prefWidth="85.0" text="예약" />
+				<Button fx:id="btnCancel" prefHeight="40.0" prefWidth="85.0" text="뒤로가기" />
+					
+			</children>
+			
+		</HBox>
+		
+	</children>
+
+</VBox>
