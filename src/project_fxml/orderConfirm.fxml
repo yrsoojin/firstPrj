@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="234.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.OrderConfirmController">
+   <children>
+      <Button fx:id="reserveBtn" layoutX="99.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleBtnReserveAction" prefWidth="50.0" text="확인">
+      <font>
+            <Font name="MoeumT R" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="timeReserve" layoutX="14.0" layoutY="64.0" text="이용 시작 시간 : 00:00~" />
+      <Label fx:id="priceReserve" layoutX="45.0" layoutY="95.0" text="결제금액 : 00000원" />
+      <TextField fx:id="moneyField" layoutX="104.0" layoutY="125.0" prefHeight="23.0" prefWidth="133.0" />
+      <Label layoutX="45.0" layoutY="129.0" text="받은금액 : " />
+      <Label layoutX="102.0" layoutY="14.0" text="결제창">
+         <font>
+            <Font name="MoeumT R" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

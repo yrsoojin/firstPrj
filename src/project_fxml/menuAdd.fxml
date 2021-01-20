@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="251.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.MenuController">
+   <children>
+      <TextField fx:id="menuField" layoutX="124.0" layoutY="40.0" prefHeight="23.0" prefWidth="163.0" />
+      <Label layoutX="57.0" layoutY="80.0" text="가격">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="41.0" layoutY="175.0" prefHeight="3.0" prefWidth="412.0" />
+      <Button fx:id="addMenuBtn" layoutX="203.0" layoutY="202.0" onAction="#menuInsert" prefHeight="23.0" prefWidth="89.0" text="메뉴 추가" />
+      <Label layoutX="39.0" layoutY="42.0" text="메뉴 이름">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="120.0" text="사진추가">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priceField" layoutX="124.0" layoutY="80.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField fx:id="photoField" layoutX="124.0" layoutY="120.0" prefHeight="23.0" prefWidth="262.0" />
+      <Button layoutX="410.0" layoutY="120.0" mnemonicParsing="false" onAction="#fileChoose" text="찾기" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+
+.root{
+	-fx-background-image:url("../images/wall.jpg");
+}
+
+#logout{
+	-fx-background-image:url("../Icon/logout.png");
+	-fx-background-color:transparent;
+}
+
+#logout:hover{	
+	-fx-background-image:url("../Icon/logout1.png");
+} 
+
+#logout:pressed{
+	-fx-background-image:url("../Icon/logout1.png");
+}

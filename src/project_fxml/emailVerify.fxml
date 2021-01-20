@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="project_controller.EmailVerifyController">
+   <children>
+      <Label alignment="CENTER" layoutY="30.0" prefWidth="300.0" text="이메일 인증">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailVerifyLabel" alignment="CENTER" layoutY="65.0" prefWidth="300.0" text="abcdefg1234@mail.com">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailVerifyField" layoutX="81.0" layoutY="100.0" />
+      <Button fx:id="emailVerifyBtn" onAction="#verifyOnAction" layoutX="110.0" layoutY="146.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="81.0" text="확인" />
+   </children>
+</AnchorPane>

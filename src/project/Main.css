@@ -1,0 +1,23 @@
+.root{
+	-fx-background-image:url("../images/cafe.jpg");
+}
+
+#welcome-text {
+	-fx-font-size: 42;
+	-fx-font-family: "Kristen ITC";
+	-fx-font-weight: bold;
+	-fx-text-fill: linear-gradient(to bottom, brown, black);
+	
+}
+.button{
+	-fx-font-family:"MoeumT R";
+	-fx-font-weight:bold;
+	-fx-background-color:white;
+	-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.6), 10,0,2,2);
+}
+.button:hover{
+	-fx-background-color:linear-gradient(#2A5058, #61a2b1);
+}
+.button:pressed{
+	-fx-backgroundcolor:linear-gradient(yellow,#61a2b1);
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="490.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.UserReserveListController">
+   <children>
+      <Button fx:id="tableReserveBtn" layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onAction="#reserveTable" prefHeight="75.0" prefWidth="100.0" text="테이블 예약">
+         <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="reserveListBtn" layoutX="25.0" layoutY="135.0" mnemonicParsing="false" onAction="#showReservation" prefHeight="75.0" prefWidth="100.0" text="예약 조회">
+         <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="userUpdate" layoutX="25.0" layoutY="235.0" mnemonicParsing="false" onAction="#reserveTable" prefHeight="75.0" prefWidth="100.0" text="정보 수정">
+         <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane layoutX="136.0" prefHeight="490.0" prefWidth="690.0">
+         <children>
+            <Button id="back" fx:id="backBtn" layoutX="626.0" layoutY="416.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="50.0" />
+            <TableView fx:id="reserveTableView" layoutX="66.0" layoutY="56.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="348.0">
+               <columns>
+                  <TableColumn fx:id="dateResTable" prefWidth="85.0" text="날짜" />
+                 
+                  <TableColumn fx:id="tableResTable" prefWidth="41.0" text="테이블" />
+                  <TableColumn fx:id="startTimeResTable" prefWidth="69.0" text="시작시간" />
+                  <TableColumn fx:id="getTimeResTable" prefWidth="74.0" text="이용시간" />
+                  <TableColumn fx:id="priceResTable" prefWidth="78.0" text="금액" />
+               </columns>
+            </TableView>
+            <DatePicker fx:id="datePicker" layoutX="414.0" layoutY="26.0" prefHeight="30.0" />
+            <Button layoutX="303.0" layoutY="26.0" mnemonicParsing="false" onAction="#reserveList" prefHeight="30.0" prefWidth="111.0" text="모든 예약 조회">
+          	 <font>
+         	   <Font name="MoeumT R" size="15.0" />
+         	</font>
+            </Button>
+            <ImageView fx:id="imageView" fitHeight="263.0" fitWidth="251.0" layoutX="425.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+            <TextArea id="textArea" fx:id="textArea" layoutX="127.0" layoutY="247.0" prefHeight="156.0" prefWidth="203.0" promptText="주문 내역">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <Label layoutX="131.0" layoutY="221.0" text="주문내역서🤠">
+               <font>
+                  <Font name="MoeumT R" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="465.0" layoutY="73.0" text="내가 예약한 자리😎">
+               <font>
+                  <Font name="MoeumT R" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

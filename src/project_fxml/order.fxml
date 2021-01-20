@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="490.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.OrderController">
+   <children>
+      <AnchorPane layoutX="150.0" minHeight="0.0" minWidth="0.0" prefHeight="490.0" prefWidth="690.0">
+         <children>
+            <Label fx:id="selectedTableLabel" layoutX="6.0" layoutY="14.0" text="테이블 선택">
+               <font>
+           	 <Font name="MoeumT R" size="15.0" />
+        	 </font>
+            </Label>
+            <Button fx:id="cancleBtn" layoutX="204.0" layoutY="459.0" mnemonicParsing="false" onAction="#delOrder" prefWidth="70.0" text="삭제">
+           		 <font>
+           			 <Font name="MoeumT R" size="13.0" />
+        		</font>
+        		</Button>
+            <Button fx:id="addBtn" layoutX="449.0" layoutY="239.0" mnemonicParsing="false" onAction="#addOrder" prefWidth="70.0" text="추가">
+           		 <font>
+           			 <Font name="MoeumT R" size="13.0" />
+        		</font>
+        		</Button>
+            <ImageView fx:id="menuimage" fitHeight="192.0" fitWidth="157.0" layoutX="523.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+            <TableView fx:id="menulist" layoutX="288.0" layoutY="36.0" prefHeight="194.0" prefWidth="231.0">
+               <columns>
+                  <TableColumn fx:id="menunameTable" prefWidth="150.0" resizable="false" text="메뉴 이름" />
+                  <TableColumn fx:id="priceTable" resizable="false" text="가격" />
+               </columns>
+            </TableView>
+            <Label fx:id="selectedMenuLabel" layoutX="288.0" layoutY="14.0" text="메뉴 선택">
+               <font>
+            		<Font name="MoeumT R" size="15.0" />
+        		 </font>
+            </Label>
+            <Separator layoutX="9.0" layoutY="266.0" prefHeight="8.0" prefWidth="683.0" />
+            <TableView fx:id="orderlist" layoutX="15.0" layoutY="296.0" prefHeight="161.0" prefWidth="259.0">
+               <columns>
+                  <TableColumn fx:id="ordernameTable" prefWidth="122.0" text="주문내역" />
+                  <TableColumn fx:id="countTable" prefWidth="53.0" text="수량" />
+                  <TableColumn fx:id="orderpriceTable" prefWidth="83.0" text="금액" />
+               </columns>
+            </TableView>
+            <Label fx:id="endTime" layoutX="390.0" layoutY="356.0" text="종료 시간 : 0시">
+               <font>
+           			 <Font name="MoeumT R" size="15.0" />
+        		</font>
+            </Label>
+            <ChoiceBox fx:id="selectTime" layoutX="421.0" layoutY="283.0" prefWidth="150.0" />
+            <Label layoutX="313.0" layoutY="285.0" text="이용 시작 시간">
+                <font>
+           			 <Font name="MoeumT R" size="15.0" />
+        		</font>
+            </Label>
+            <Label fx:id="time" layoutX="350.0" layoutY="330.0" prefHeight="19.0" prefWidth="184.0" text="이용 가능 시간 : 0시간">
+               <font>
+           			 <Font name="MoeumT R" size="15.0" />
+        		</font>
+            </Label>
+            <Button id="back" fx:id="backBtn" layoutX="616.0" layoutY="418.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="50.0" />
+            <Button fx:id="payBtn" layoutX="499.0" layoutY="440.0" mnemonicParsing="false" onAction="#pay" prefHeight="30.0" prefWidth="70.0" text="결제">
+               <font>
+           			 <Font name="MoeumT R" size="15.0" />
+        		</font>
+            </Button>
+            <Label fx:id="total" layoutX="346.0" layoutY="443.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: gold;" text="합계 : 0원">
+                <font>
+           			 <Font name="MoeumT R" size="20.0" />
+        		</font>
+            </Label>
+            <Label fx:id="exceptionLabel" layoutX="328.0" layoutY="383.0" prefHeight="23.0" prefWidth="259.0" textFill="RED" />
+            <AnchorPane layoutX="6.0" layoutY="38.0" prefHeight="210.0" prefWidth="251.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="89.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="178.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="90.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="179.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="179.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="90.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutY="153.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Button fx:id="btn1" layoutY="6.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 1" />
+                  <Button fx:id="btn2" layoutX="87.0" layoutY="6.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 2" />
+                  <Button fx:id="btn4" layoutY="79.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 4" />
+                  <Button fx:id="btn5" layoutX="89.0" layoutY="78.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 5" />
+                  <Button fx:id="btn6" layoutX="178.0" layoutY="79.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 6" />
+                  <Button fx:id="btn3" layoutX="177.0" layoutY="6.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 3" />
+                  <Button fx:id="btn7" layoutY="154.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 7" />
+                  <Button fx:id="btn8" layoutX="91.0" layoutY="152.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 8" />
+                  <Button fx:id="btn9" layoutX="179.0" layoutY="152.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;" text="Table 9" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="selectedTableLabel1" layoutX="14.0" layoutY="270.0" text="나의 주문 내역">
+              	<font>
+           			 <Font name="MoeumT R" size="15.0" />
+        		 </font>
+            </Label>
+            <Label fx:id="selectedMenuLabel1" layoutX="523.0" layoutY="14.0" text="메뉴 사진">
+               <font>
+                  <Font name="MoeumT R" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="tableReserveBtn" layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onAction="#reserveTable" prefHeight="75.0" prefWidth="100.0" text="테이블 예약">
+         <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="reserveListBtn" layoutX="25.0" layoutY="135.0" mnemonicParsing="false" onAction="#showReservation" prefHeight="75.0" prefWidth="100.0" text="예약 조회">
+        <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="userUpdate" layoutX="25.0" layoutY="235.0" mnemonicParsing="false" onAction="#reserveTable" prefHeight="75.0" prefWidth="100.0" text="정보 수정">
+         <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

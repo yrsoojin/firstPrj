@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.AdminController">
+  <tabs>
+      <Tab text="테이블 환경설정">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="53.0" layoutY="70.0" prefHeight="299.0" prefWidth="299.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="200.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="100.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="200.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="200.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="100.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Button fx:id="btn1" layoutY="-3.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 1" />
+                        <Button fx:id="btn2" layoutX="97.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 2" />
+                        <Button fx:id="btn4" layoutY="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 4" />
+                        <Button fx:id="btn5" layoutX="101.0" layoutY="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 5" />
+                        <Button fx:id="btn6" layoutX="201.0" layoutY="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 6" />
+                        <Button fx:id="btn3" layoutX="201.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 3" />
+                        <Button fx:id="btn7" layoutY="200.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 7" />
+                        <Button fx:id="btn8" layoutX="101.0" layoutY="200.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 8" />
+                        <Button fx:id="btn9" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Table 9" />
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="592.0" layoutY="37.0" mnemonicParsing="false" onAction="#fileChoose" text="테이블 사진 수정" />
+                  <ImageView fx:id="imageView" fitHeight="290.0" fitWidth="355.0" layoutX="408.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="refreshBtn" layoutX="715.0" layoutY="37.0" mnemonicParsing="false" text="새로고침" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="메뉴 관리">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="529.0" mnemonicParsing="false" onAction="#setMenu" prefHeight="29.0" prefWidth="68.0" text="추가" />
+                  <Button layoutX="597.0" mnemonicParsing="false" onAction="#updateMenu" prefHeight="29.0" prefWidth="68.0" text="수정" />
+                  <Button layoutX="665.0" mnemonicParsing="false" onAction="#deleteMenu" prefHeight="29.0" prefWidth="68.0" text="삭제" />
+                  <TableView fx:id="menulist" layoutY="29.0" prefHeight="442.0" prefWidth="230.0">
+                     <columns>
+                        <TableColumn fx:id="menunameTable" prefWidth="150.0" resizable="false" text="메뉴 이름" />
+                        <TableColumn fx:id="priceTable" resizable="false" text="가격" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="menuimage" fitHeight="262.0" fitWidth="401.0" layoutX="328.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="733.0" mnemonicParsing="false" onAction="#menuRefresh" prefHeight="29.0" prefWidth="68.0" text="새로고침" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+    <Tab text="예약 내역 조회">
+         <content>
+            <AnchorPane prefHeight="300.0" prefWidth="700.0">
+               <children>
+                  <TableView fx:id="reserveTableView" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="800.0">
+                     <columns>
+                        <TableColumn fx:id="dateResTable" editable="false" prefWidth="70.0" resizable="false" text="날짜" />
+                        <TableColumn fx:id="idResTable" prefWidth="70.0" resizable="false" text="아이디" />
+                        <TableColumn fx:id="nameResTable" prefWidth="70.0" resizable="false" text="이름" />
+                        <TableColumn fx:id="tableResTable" prefWidth="50.0" resizable="false" text="테이블" />
+                        <TableColumn fx:id="reserveTimeResTable" prefWidth="70.0" resizable="false" text="결제시간" />
+                        <TableColumn fx:id="startTimeResTable" prefWidth="70.0" resizable="false" text="시작시간" />
+                        <TableColumn fx:id="getTimeResTable" prefWidth="70.0" resizable="false" text="이용시간" />
+                        <TableColumn fx:id="orderMenuResTable" prefWidth="215.0" resizable="false" text="주문내역" />
+                        <TableColumn fx:id="priceResTable" prefWidth="114.0" resizable="false" text="금액" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="searchReserve" layoutX="676.0" layoutY="-1.0" mnemonicParsing="false" onAction="#reserveList" prefHeight="30.0" prefWidth="102.0" text="모든 예약 조회" />
+                  <DatePicker fx:id="datePicker" layoutX="513.0" prefHeight="30.0" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+      <Tab text="매출 내역 관리">
+         <content>
+            <AnchorPane prefHeight="300.0" prefWidth="700.0">
+               <children>
+                  <LineChart fx:id="lineChart" layoutX="212.0" layoutY="38.0" prefHeight="215.0" prefWidth="481.0">
+                    <xAxis>
+                      <CategoryAxis prefHeight="20.0" prefWidth="346.0" side="BOTTOM" fx:id="xAxis" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" upperBound="100000.0" />
+                    </yAxis>
+                  </LineChart>
+                  <DatePicker fx:id="datePick" layoutX="537.0" layoutY="14.0" />
+                  <LineChart fx:id="lineChart1" layoutX="212.0" layoutY="236.0" prefHeight="215.0" prefWidth="481.0">
+                     <xAxis>
+                        <CategoryAxis prefHeight="20.0" prefWidth="346.0" side="BOTTOM" fx:id="xAxis2" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" upperBound="100000.0" />
+                     </yAxis>
+                  </LineChart>
+                  <Label layoutX="93.0" layoutY="300.0" text="일별 매출액" />
+                  <TableView fx:id="totalTableView" layoutX="25.0" layoutY="85.0" prefHeight="209.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="dateCol" prefWidth="90.0" text="날짜" />
+                      <TableColumn fx:id="totalCol" prefWidth="108.0" text="매출액" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    <Tab text="회원 정보 관리">
+         <content>
+            <AnchorPane prefHeight="300.0" prefWidth="700.0">
+               <children>
+                  <TableView fx:id="table" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="800.0">
+                     <columns>
+                        <TableColumn fx:id="idTable" prefWidth="129.0" text="아이디" />
+                        <TableColumn fx:id="nameTable" prefWidth="103.0" text="이름" />
+                        <TableColumn fx:id="emailTable" prefWidth="231.0" text="메일주소" />
+                        <TableColumn fx:id="phoneTable" prefWidth="140.0" text="휴대폰 번호" />
+                        <TableColumn fx:id="reservDate" prefWidth="198.0" text="가입일" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="search" layoutX="682.0" mnemonicParsing="false" onAction="#userList" prefHeight="30.0" prefWidth="102.0" text="모든 회원 조회" />
+                  <Button fx:id="searchOne" layoutX="614.0" mnemonicParsing="false" onAction="#userOneList" prefHeight="30.0" text="회원 검색" />
+                  <TextField fx:id="searchId" layoutX="476.0" prefHeight="30.0" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>

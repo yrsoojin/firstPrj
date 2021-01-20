@@ -1,0 +1,19 @@
+
+
+.root{
+	-fx-background-image:url("../images/wall.jpg");
+}
+
+#back{
+	-fx-background-image:url("../Icon/return.png");
+	-fx-background-color:transparent;
+}
+
+#back:hover{	
+	-fx-background-image:url("../Icon/return1.png");
+} 
+
+#back:pressed{
+	-fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+	-fx-background-image:url("../Icon/return1.png");
+}

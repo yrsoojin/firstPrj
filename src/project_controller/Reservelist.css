@@ -1,0 +1,40 @@
+
+#textArea.text-area .content {
+	-fx-background-color: transparent;
+	-fx-background-image:url("../images/paper1.jpg");
+}
+
+#textArea.text-area .scroll-pane {
+	-fx-background-color: transparent;
+}
+
+#textArea.text-area .scroll-pane .viewport{
+	-fx-background-color: transparent;
+}
+
+.root{
+	-fx-background-image:url("../images/wall.jpg");
+}
+
+#back{
+	-fx-background-image:url("../Icon/return.png");
+	-fx-background-color:transparent;
+}
+
+#back:hover{	
+	-fx-background-image:url("../Icon/return1.png");
+} 
+
+#back:pressed{
+	-fx-background-image:url("../Icon/return1.png");
+}
+/* 
+.button:hover{
+	-fx-background-image:url("../Icon/return1.png");
+}
+
+
+.button:pressed{
+	-fx-background-color:linear-gradient(yellow,#61a2b1);
+}  */
+

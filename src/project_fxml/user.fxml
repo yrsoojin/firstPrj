@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="490.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.UserController">
+   <children>
+      <Button fx:id="tableReserveBtn" layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onAction="#reserveTable" prefHeight="75.0" prefWidth="100.0" text="테이블 예약">
+         <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="reserveListBtn" layoutX="25.0" layoutY="135.0" mnemonicParsing="false" onAction="#showReservation" prefHeight="75.0" prefWidth="100.0" text="예약 조회">
+        <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="userUpdateBtn" layoutX="25.0" layoutY="235.0" mnemonicParsing="false" onAction="#userUpdate" prefHeight="75.0" prefWidth="100.0" text="정보 수정">
+         <font>
+            <Font name="MoeumT R" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="320.0" layoutY="142.0" prefHeight="95.0" prefWidth="321.0" text="필요한 서비스를 선택하세요 ">
+         <font>
+            <Font name="MoeumT R" size="19.0" />
+         </font>
+      </Label>
+      <Button id="logout" fx:id="logoutBtn" layoutX="756.0" layoutY="23.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="50.0" />
+      <Label layoutX="761.0" layoutY="73.0" text="로그아웃">
+         <font>
+            <Font name="MoeumT R" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
